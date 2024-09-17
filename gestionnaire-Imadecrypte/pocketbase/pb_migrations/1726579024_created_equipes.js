@@ -1,16 +1,16 @@
 /// <reference path="../pb_data/types.d.ts" />
 migrate((db) => {
   const collection = new Collection({
-    "id": "ljngfkyto6rhy1c",
-    "created": "2024-09-17 09:04:04.165Z",
-    "updated": "2024-09-17 09:04:04.165Z",
+    "id": "ovvmlzcheut69w9",
+    "created": "2024-09-17 13:17:04.711Z",
+    "updated": "2024-09-17 13:17:04.711Z",
     "name": "equipes",
     "type": "base",
     "system": false,
     "schema": [
       {
         "system": false,
-        "id": "z9da6gnb",
+        "id": "fflthub6",
         "name": "nom",
         "type": "text",
         "required": false,
@@ -24,7 +24,7 @@ migrate((db) => {
       },
       {
         "system": false,
-        "id": "nptweczg",
+        "id": "pkt1946s",
         "name": "description",
         "type": "editor",
         "required": false,
@@ -47,7 +47,7 @@ migrate((db) => {
   return Dao(db).saveCollection(collection);
 }, (db) => {
   const dao = new Dao(db);
-  const collection = dao.findCollectionByNameOrId("ljngfkyto6rhy1c");
+  const collection = dao.findCollectionByNameOrId("ovvmlzcheut69w9");
 
   return dao.deleteCollection(collection);
 })
